@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#151515">
+<title>لمسة فن للديكور</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <section class="screen welcome active" id="welcome">
+    <div class="brand-mark">⌂</div>
+    <div class="welcome-door"></div>
+    <div class="welcome-content">
+      <div class="eyebrow">لمسة فن</div>
+      <h1>للديكور</h1>
+      <p>أبواب تكمّل جمال المكان<br>وتفاصيل تصنع الفرق</p>
+      <button class="primary" onclick="show('home')">ابدأ الآن <span>←</span></button>
+      <a class="phone" href="tel:771721110">☎ 771721110</a>
+    </div>
+  </section>
+
+  <section class="screen" id="home">
+    <header>
+      <div>
+        <small>مرحباً بك</small>
+        <h2>لمسة فن للديكور</h2>
+      </div>
+      <button class="icon">☰</button>
+    </header>
+    <div class="hero">
+      <div>
+        <span>تصميم عصري</span>
+        <h3>أبواب بجودة عالية<br>لتصميم يدوم</h3>
+        <button onclick="show('product')">استكشف الآن</button>
+      </div>
+      <div class="hero-door"></div>
+    </div>
+    <div class="search">⌕ <span>ابحث عن باب أو تصميم...</span></div>
+    <div class="cats">
+      <button onclick="filter('داخلية')">▥<b>أبواب داخلية</b></button>
+      <button onclick="filter('WPC')">▤<b>WPC</b></button>
+      <button onclick="filter('زجاج')">▥<b>أبواب زجاجية</b></button>
+      <button onclick="filter('حمامات')">▢<b>أبواب حمامات</b></button>
+    </div>
+    <div class="section-title"><b>الأكثر تفضيلاً</b><span onclick="filter('all')">عرض الكل</span></div>
+    <div class="products" id="products"></div>
+    <nav><button class="selected">⌂<b>الرئيسية</b></button><button>♡<b>المفضلة</b></button><button>▣<b>المشاريع</b></button><button onclick="show('product')">🛒<b>السلة</b></button></nav>
+  </section>
+
+  <section class="screen" id="product">
+    <header><button class="back" onclick="show('home')">→</button><h2>تفاصيل الباب</h2><button class="icon">♡</button></header>
+    <div class="large-door"><div class="door-panel"></div></div>
+    <div class="dots">● ○ ○ ○</div>
+    <div class="product-info">
+      <span class="tag">WPC • مودرن</span>
+      <h1>باب WPC مودرن</h1>
+      <p>تصميم عصري يجمع بين الأناقة والمتانة، مقاوم للماء وسهل التنظيف.</p>
+      <div class="price">240,000 <small>ريال</small></div>
+      <div class="features"><div>◈<b>مقاوم للماء</b></div><div>♬<b>عزل صوتي</b></div><div>✦<b>سهل التنظيف</b></div><div>◇<b>متانة عالية</b></div></div>
+      <h3>الألوان المتاحة</h3>
+      <div class="swatches"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <button class="primary full" onclick="alert('تمت إضافة الباب إلى السلة')">أضف إلى السلة 🛒</button>
+      <button class="outline full" onclick="show('details')">عرض التفاصيل</button>
+    </div>
+  </section>
+
+  <section class="screen" id="details">
+    <header><button class="back" onclick="show('product')">→</button><h2>مواصفات المنتج</h2><span></span></header>
+    <div class="specs">
+      <div><span>الخامة</span><b>WPC</b></div><div><span>المقاس</span><b>210 × 90 سم</b></div>
+      <div><span>السماكة</span><b>40 مم</b></div><div><span>مقاوم للماء</span><b>نعم</b></div>
+      <div><span>عزل صوتي</span><b>نعم</b></div><div><span>سهولة التنظيف</span><b>نعم</b></div>
+      <div><span>الضمان</span><b>5 سنوات</b></div>
+    </div>
+    <h3>الوصف</h3>
+    <p class="description">باب WPC بتصميم عصري أنيق، يتميز بمقاومة عالية للرطوبة والماء وعزل صوتي ممتاز، مناسب للمساحات الداخلية المختلفة.</p>
+    <h3>تواصل معنا</h3>
+    <a class="contact" href="tel:771721110">☎ اتصل الآن — 771721110</a>
+    <button class="primary full" onclick="show('home')">استعرض أبواب أخرى</button>
+  </section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
