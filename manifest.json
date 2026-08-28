@@ -1,11 +1,19 @@
 
 {
-  "name": "بوابة للخشب والديكور",
+  "name": "بوابة للأخشاب والديكور",
   "short_name": "بوابة",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#1E1E1E",
   "theme_color": "#D4AF37",
   "lang": "ar",
-  "dir": "rtl"
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
