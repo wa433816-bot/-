@@ -17,7 +17,7 @@
 <div id="app">
 
   <!-- =========================
-       WELCOME
+       WELCOME SCREEN
        ========================= -->
   <section class="screen welcome active" id="welcome">
 
@@ -55,7 +55,7 @@
 
 
   <!-- =========================
-       HOME
+       HOME SCREEN
        ========================= -->
   <section class="screen" id="home">
 
@@ -63,15 +63,22 @@
 
       <div>
         <small>مرحباً بك</small>
-        <h2>بوابة للخشب والديكور</h2>
+
+        <h2>
+          بوابة للخشب والديكور
+        </h2>
       </div>
 
-      <button class="icon" type="button">
+      <button
+        class="icon"
+        type="button">
         ☰
       </button>
 
     </header>
 
+
+    <!-- HERO -->
 
     <div class="hero">
 
@@ -86,7 +93,7 @@
 
         <button
           type="button"
-          onclick="show('product',0)">
+          onclick="show('product', 0)">
           استكشف الآن
         </button>
 
@@ -97,11 +104,20 @@
     </div>
 
 
+    <!-- SEARCH -->
+
     <div class="search">
+
       ⌕
-      <span>ابحث عن باب أو تصميم...</span>
+
+      <span>
+        ابحث عن باب أو تصميم...
+      </span>
+
     </div>
 
+
+    <!-- CATEGORIES -->
 
     <div class="cats">
 
@@ -111,29 +127,40 @@
 
         ▥
 
-        <b>أبواب خشبية</b>
+        <b>
+          أبواب خشبية
+        </b>
 
       </button>
 
     </div>
 
 
+    <!-- PRODUCTS TITLE -->
+
     <div class="section-title">
 
-      <b>أبوابنا</b>
+      <b>
+        أبوابنا
+      </b>
 
-      <span onclick="filter('all')">
+      <span
+        onclick="filter('all')">
         عرض الكل
       </span>
 
     </div>
 
 
+    <!-- PRODUCTS -->
+
     <div
       class="products"
       id="products">
     </div>
 
+
+    <!-- BOTTOM NAVIGATION -->
 
     <nav>
 
@@ -143,33 +170,47 @@
         onclick="show('home')">
 
         ⌂
-        <b>الرئيسية</b>
+
+        <b>
+          الرئيسية
+        </b>
 
       </button>
 
 
-      <button type="button">
+      <button
+        type="button">
 
         ♡
-        <b>المفضلة</b>
+
+        <b>
+          المفضلة
+        </b>
 
       </button>
 
 
-      <button type="button">
+      <button
+        type="button">
 
         ▣
-        <b>المشاريع</b>
+
+        <b>
+          المشاريع
+        </b>
 
       </button>
 
 
       <button
         type="button"
-        onclick="show('product',0)">
+        onclick="show('product', 0)">
 
         🛒
-        <b>التفاصيل</b>
+
+        <b>
+          التفاصيل
+        </b>
 
       </button>
 
@@ -179,8 +220,9 @@
 
 
   <!-- =========================
-       PRODUCT
+       PRODUCT SCREEN
        ========================= -->
+
   <section
     class="screen"
     id="product">
@@ -191,27 +233,34 @@
         class="back"
         type="button"
         onclick="show('home')">
+
         →
+
       </button>
 
-      <h2>تفاصيل الباب</h2>
+      <h2>
+        تفاصيل الباب
+      </h2>
 
       <button
         class="icon"
         type="button">
+
         ♡
+
       </button>
 
     </header>
 
 
-    <!-- غرفة عرض الباب -->
+    <!-- ROOM SHOWCASE -->
 
     <div class="room-showcase">
 
       <div class="room-wall">
 
         <div class="wall-light"></div>
+
 
         <div class="door-display">
 
@@ -222,6 +271,7 @@
 
         </div>
 
+
         <div class="decor-left"></div>
 
         <div class="decor-right"></div>
@@ -231,47 +281,80 @@
     </div>
 
 
+    <!-- PRODUCT INFORMATION -->
+
     <div class="product-info">
 
       <span
         class="tag"
         id="product-type">
+
         خشبية
+
       </span>
 
 
-      <h1 id="product-name"></h1>
+      <h1
+        id="product-name">
+      </h1>
 
 
-      <p id="product-spec"></p>
+      <p
+        id="product-spec">
+      </p>
 
+
+      <!-- FEATURES -->
 
       <div class="features">
 
         <div>
+
           ✦
-          <b>تصميم أنيق</b>
+
+          <b>
+            تصميم أنيق
+          </b>
+
         </div>
 
+
         <div>
+
           ◇
-          <b>جودة عالية</b>
+
+          <b>
+            جودة عالية
+          </b>
+
         </div>
 
+
         <div>
+
           ◈
-          <b>تشطيب حراري</b>
+
+          <b>
+            تشطيب حراري
+          </b>
+
         </div>
 
+
         <div>
+
           ♢
-          <b>مناسب للغرف</b>
+
+          <b>
+            مناسب للغرف
+          </b>
+
         </div>
 
       </div>
 
 
-      <!-- الاتصال والواتساب -->
+      <!-- CONTACT BUTTONS -->
 
       <div class="contact-buttons">
 
@@ -297,6 +380,8 @@
       </div>
 
 
+      <!-- DETAILS BUTTON -->
+
       <button
         class="outline full"
         type="button"
@@ -312,8 +397,9 @@
 
 
   <!-- =========================
-       DETAILS
+       DETAILS SCREEN
        ========================= -->
+
   <section
     class="screen"
     id="details">
@@ -340,20 +426,27 @@
     </header>
 
 
+    <!-- SPECIFICATIONS -->
+
     <div class="specs">
 
       <div>
 
-        <span>الخامة</span>
+        <span>
+          الخامة
+        </span>
 
-        <b id="details-material"></b>
+        <b id="details-material">
+        </b>
 
       </div>
 
 
       <div>
 
-        <span>الاستخدام</span>
+        <span>
+          الاستخدام
+        </span>
 
         <b id="details-use">
           أبواب غرف داخلية
@@ -364,7 +457,9 @@
 
       <div>
 
-        <span>التشطيب</span>
+        <span>
+          التشطيب
+        </span>
 
         <b id="details-finish">
           -
@@ -375,7 +470,9 @@
 
       <div>
 
-        <span>مقاومة الرطوبة</span>
+        <span>
+          مقاومة الرطوبة
+        </span>
 
         <b id="details-moisture">
           -
@@ -385,6 +482,8 @@
 
     </div>
 
+
+    <!-- DESCRIPTION -->
 
     <h3>
       الوصف
@@ -397,7 +496,7 @@
     </p>
 
 
-    <!-- الاتصال والواتساب -->
+    <!-- CONTACT -->
 
     <h3>
       تواصل معنا
@@ -428,6 +527,8 @@
     </div>
 
 
+    <!-- BACK TO PRODUCTS -->
+
     <button
       class="primary full"
       type="button"
@@ -438,17 +539,27 @@
     </button>
 
   </section>
-<!-- Floating WhatsApp Button -->
+
+</div>
+
+
+<!-- =========================
+     FLOATING WHATSAPP BUTTON
+     ========================= -->
+
 <a
   class="floating-whatsapp"
   href="https://wa.me/967771721110"
   target="_blank"
   rel="noopener"
   aria-label="راسلنا عبر واتساب">
-  💬
-</a>
-</div>
 
+  💬
+
+</a>
+
+
+<!-- JAVASCRIPT -->
 
 <script src="app.js"></script>
 
