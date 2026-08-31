@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-
   <meta name="theme-color" content="#151515">
 
   <title>بوابة للخشب والديكور</title>
@@ -18,7 +17,7 @@
 <div id="app">
 
   <!-- =========================
-       WELCOME SCREEN
+       WELCOME
        ========================= -->
   <section class="screen welcome active" id="welcome">
 
@@ -56,7 +55,7 @@
 
 
   <!-- =========================
-       HOME SCREEN
+       HOME
        ========================= -->
   <section class="screen" id="home">
 
@@ -64,22 +63,16 @@
 
       <div>
         <small>مرحباً بك</small>
-
-        <h2>
-          بوابة للخشب والديكور
-        </h2>
+        <h2>بوابة للخشب والديكور</h2>
       </div>
 
-      <button
-        class="icon"
-        type="button">
+      <button class="icon" type="button">
         ☰
       </button>
 
     </header>
 
 
-    <!-- HERO -->
     <div class="hero">
 
       <div>
@@ -93,7 +86,7 @@
 
         <button
           type="button"
-          onclick="show('product', 0)">
+          onclick="show('product',0)">
           استكشف الآن
         </button>
 
@@ -104,16 +97,12 @@
     </div>
 
 
-    <!-- SEARCH -->
     <div class="search">
       ⌕
-      <span>
-        ابحث عن باب أو تصميم...
-      </span>
+      <span>ابحث عن باب أو تصميم...</span>
     </div>
 
 
-    <!-- CATEGORIES -->
     <div class="cats">
 
       <button
@@ -122,38 +111,30 @@
 
         ▥
 
-        <b>
-          أبواب خشبية
-        </b>
+        <b>أبواب خشبية</b>
 
       </button>
 
     </div>
 
 
-    <!-- PRODUCTS TITLE -->
     <div class="section-title">
 
-      <b>
-        أبوابنا
-      </b>
+      <b>أبوابنا</b>
 
-      <span
-        onclick="filter('all')">
+      <span onclick="filter('all')">
         عرض الكل
       </span>
 
     </div>
 
 
-    <!-- PRODUCTS -->
     <div
       class="products"
       id="products">
     </div>
 
 
-    <!-- BOTTOM NAVIGATION -->
     <nav>
 
       <button
@@ -162,47 +143,33 @@
         onclick="show('home')">
 
         ⌂
-
-        <b>
-          الرئيسية
-        </b>
+        <b>الرئيسية</b>
 
       </button>
 
 
-      <button
-        type="button">
+      <button type="button">
 
         ♡
-
-        <b>
-          المفضلة
-        </b>
+        <b>المفضلة</b>
 
       </button>
 
 
-      <button
-        type="button">
+      <button type="button">
 
         ▣
-
-        <b>
-          المشاريع
-        </b>
+        <b>المشاريع</b>
 
       </button>
 
 
       <button
         type="button"
-        onclick="show('product', 0)">
+        onclick="show('product',0)">
 
         🛒
-
-        <b>
-          التفاصيل
-        </b>
+        <b>التفاصيل</b>
 
       </button>
 
@@ -212,7 +179,7 @@
 
 
   <!-- =========================
-       PRODUCT SCREEN
+       PRODUCT
        ========================= -->
   <section
     class="screen"
@@ -227,9 +194,7 @@
         →
       </button>
 
-      <h2>
-        تفاصيل الباب
-      </h2>
+      <h2>تفاصيل الباب</h2>
 
       <button
         class="icon"
@@ -240,13 +205,13 @@
     </header>
 
 
-    <!-- PRODUCT IMAGE SHOWCASE -->
+    <!-- غرفة عرض الباب -->
+
     <div class="room-showcase">
 
       <div class="room-wall">
 
         <div class="wall-light"></div>
-
 
         <div class="door-display">
 
@@ -257,7 +222,6 @@
 
         </div>
 
-
         <div class="decor-left"></div>
 
         <div class="decor-right"></div>
@@ -267,7 +231,6 @@
     </div>
 
 
-    <!-- PRODUCT INFORMATION -->
     <div class="product-info">
 
       <span
@@ -277,65 +240,63 @@
       </span>
 
 
-      <h1
-        id="product-name">
-      </h1>
+      <h1 id="product-name"></h1>
 
 
-      <p
-        id="product-spec">
-      </p>
+      <p id="product-spec"></p>
 
 
-      <!-- FEATURES -->
       <div class="features">
 
         <div>
           ✦
-          <b>
-            تصميم أنيق
-          </b>
+          <b>تصميم أنيق</b>
         </div>
-
 
         <div>
           ◇
-          <b>
-            جودة عالية
-          </b>
+          <b>جودة عالية</b>
         </div>
-
 
         <div>
           ◈
-          <b>
-            تشطيب حراري
-          </b>
+          <b>تشطيب حراري</b>
         </div>
-
 
         <div>
           ♢
-          <b>
-            مناسب للغرف
-          </b>
+          <b>مناسب للغرف</b>
         </div>
 
       </div>
 
 
-      <!-- CONTACT BUTTON -->
-      <a
-        class="primary full"
-        href="tel:771721110"
-        style="display:block;text-align:center;text-decoration:none;">
+      <!-- الاتصال والواتساب -->
 
-        تواصل معنا ☎
+      <div class="contact-buttons">
 
-      </a>
+        <a
+          class="contact"
+          href="tel:771721110">
+
+          📞 اتصل بنا
+
+        </a>
 
 
-      <!-- DETAILS BUTTON -->
+        <a
+          class="contact whatsapp"
+          href="https://wa.me/967771721110"
+          target="_blank"
+          rel="noopener">
+
+          💬 راسلنا عبر واتساب
+
+        </a>
+
+      </div>
+
+
       <button
         class="outline full"
         type="button"
@@ -351,7 +312,7 @@
 
 
   <!-- =========================
-       DETAILS SCREEN
+       DETAILS
        ========================= -->
   <section
     class="screen"
@@ -379,26 +340,20 @@
     </header>
 
 
-    <!-- SPECIFICATIONS -->
     <div class="specs">
 
       <div>
 
-        <span>
-          الخامة
-        </span>
+        <span>الخامة</span>
 
-        <b id="details-material">
-        </b>
+        <b id="details-material"></b>
 
       </div>
 
 
       <div>
 
-        <span>
-          الاستخدام
-        </span>
+        <span>الاستخدام</span>
 
         <b id="details-use">
           أبواب غرف داخلية
@@ -409,9 +364,7 @@
 
       <div>
 
-        <span>
-          التشطيب
-        </span>
+        <span>التشطيب</span>
 
         <b id="details-finish">
           -
@@ -422,9 +375,7 @@
 
       <div>
 
-        <span>
-          مقاومة الرطوبة
-        </span>
+        <span>مقاومة الرطوبة</span>
 
         <b id="details-moisture">
           -
@@ -435,10 +386,10 @@
     </div>
 
 
-    <!-- DESCRIPTION -->
     <h3>
       الوصف
     </h3>
+
 
     <p
       class="description"
@@ -446,26 +397,37 @@
     </p>
 
 
-    <!-- CONTACT -->
-    <
-<div class="contact-buttons">
+    <!-- الاتصال والواتساب -->
 
-  <a
-    class="contact"
-    href="tel:771721110">
-    📞 اتصل بنا
-  </a>
+    <h3>
+      تواصل معنا
+    </h3>
 
-  <a
-    class="contact whatsapp"
-    href="https://wa.me/967771721110"
-    target="_blank">
-    💬 راسلنا عبر واتساب
-  </a>
 
-</div>
+    <div class="contact-buttons">
 
-    <!-- BACK TO PRODUCTS -->
+      <a
+        class="contact"
+        href="tel:771721110">
+
+        📞 اتصل بنا
+
+      </a>
+
+
+      <a
+        class="contact whatsapp"
+        href="https://wa.me/967771721110"
+        target="_blank"
+        rel="noopener">
+
+        💬 راسلنا عبر واتساب
+
+      </a>
+
+    </div>
+
+
     <button
       class="primary full"
       type="button"
@@ -480,7 +442,6 @@
 </div>
 
 
-<!-- JAVASCRIPT -->
 <script src="app.js"></script>
 
 </body>
