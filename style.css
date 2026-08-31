@@ -1,400 +1,574 @@
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box
+}
 
 body{
-margin:0;
-background:#e9e5df;
-color:#171717;
-font-family:Tahoma,Arial,sans-serif
+  margin:0;
+  background:#e9e5df;
+  color:#171717;
+  font-family:Tahoma,Arial,sans-serif
 }
 
 .screen{
-display:none;
-min-height:100vh;
-max-width:430px;
-margin:auto;
-background:#faf8f4;
-padding:22px 20px 90px
+  display:none;
+  min-height:100vh;
+  max-width:430px;
+  margin:auto;
+  background:#faf8f4;
+  padding:22px 20px 90px
 }
 
-.screen.active{display:block}
+.screen.active{
+  display:block
+}
 
 .welcome{
-position:relative;
-overflow:hidden;
-background:linear-gradient(145deg,#111,#23201d);
-color:#fff;
-display:flex;
-flex-direction:column;
-justify-content:flex-end
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(145deg,#111 0%,#23201d 100%);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end
 }
 
 .welcome-door{
-position:absolute;
-inset:0 16% 0 16%;
-border:2px solid #b98b58;
-opacity:.35;
-box-shadow:inset 0 0 0 16px #171717
+  position:absolute;
+  inset:0 16% 0 16%;
+  border:2px solid #b98b58;
+  opacity:.35;
+  box-shadow:inset 0 0 0 16px #171717
 }
 
 .brand-mark{
-position:absolute;
-top:32px;
-right:28px;
-border:2px solid #c99760;
-border-radius:8px;
-padding:9px 13px;
-color:#c99760;
-font-size:25px
+  position:absolute;
+  top:32px;
+  right:28px;
+  border:2px solid #c99760;
+  border-radius:8px;
+  padding:9px 13px;
+  color:#c99760;
+  font-size:25px
 }
 
 .welcome-content{
-position:relative;
-padding:28px;
-text-align:center;
-background:linear-gradient(transparent,rgba(0,0,0,.75) 35%)
+  position:relative;
+  padding:28px;
+  text-align:center;
+  background:linear-gradient(
+    transparent,
+    rgba(0,0,0,.75) 35%
+  )
 }
 
 .eyebrow{
-font-size:38px;
-font-weight:800
+  font-size:38px;
+  font-weight:800
 }
 
 .welcome h1{
-margin:0;
-color:#d1a06c;
-font-size:25px
+  margin:0;
+  color:#d1a06c;
+  font-size:25px
 }
 
 .welcome p{
-line-height:1.9;
-color:#ddd
+  line-height:1.9;
+  color:#ddd
 }
 
 .primary{
-border:0;
-background:#d3a06a;
-color:#161616;
-border-radius:16px;
-padding:15px 22px;
-font-weight:800;
-font-size:16px;
-cursor:pointer
+  border:0;
+  background:#d3a06a;
+  color:#161616;
+  border-radius:16px;
+  padding:15px 22px;
+  font-weight:800;
+  font-size:16px;
+  cursor:pointer
 }
 
 .phone{
-display:block;
-color:#d3a06a;
-border:1px solid #73583d;
-border-radius:16px;
-padding:13px;
-margin-top:10px;
-text-decoration:none
+  display:block;
+  color:#d3a06a;
+  border:1px solid #73583d;
+  border-radius:16px;
+  padding:13px;
+  margin-top:10px;
+  text-decoration:none
 }
 
 .screen header{
-display:flex;
-align-items:center;
-justify-content:space-between;
-margin-bottom:20px
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:20px
 }
 
 .screen header h2{
-margin:0;
-font-size:21px
+  margin:0;
+  font-size:21px
 }
 
-.icon,.back{
-background:none;
-border:0;
-font-size:24px
+.screen header small{
+  color:#8c8175
+}
+
+.icon,
+.back{
+  background:none;
+  border:0;
+  font-size:24px;
+  cursor:pointer
 }
 
 .hero{
-height:190px;
-border-radius:22px;
-overflow:hidden;
-background:#1d1a18;
-color:#fff;
-padding:22px;
-display:flex;
-justify-content:space-between;
-position:relative
+  height:190px;
+  border-radius:22px;
+  overflow:hidden;
+  background:#1d1a18;
+  color:#fff;
+  padding:22px;
+  display:flex;
+  justify-content:space-between;
+  position:relative
 }
 
 .hero h3{
-font-size:21px;
-line-height:1.5;
-margin:10px 0
+  font-size:21px;
+  line-height:1.5;
+  margin:10px 0
 }
 
-.hero span{color:#ddb17e}
+.hero span{
+  color:#ddb17e
+}
 
 .hero button{
-border:0;
-border-radius:10px;
-padding:9px 14px;
-background:#d4a16b;
-font-weight:bold
+  border:0;
+  border-radius:10px;
+  padding:9px 14px;
+  background:#d4a16b;
+  font-weight:bold;
+  cursor:pointer
 }
 
 .hero-door{
-width:115px;
-height:145px;
-border:7px solid #4a4038;
-border-bottom:0;
-background:linear-gradient(90deg,#3b342e,#6b5b4c,#3b342e);
-border-radius:8px 8px 0 0;
-align-self:flex-end
+  width:115px;
+  border:7px solid #4a4038;
+  border-bottom:0;
+  background:linear-gradient(
+    90deg,
+    #3b342e,
+    #6b5b4c,
+    #3b342e
+  );
+  border-radius:8px 8px 0 0;
+  align-self:flex-end;
+  height:145px
 }
 
 .search{
-margin:15px 0;
-border:1px solid #ddd4c9;
-border-radius:14px;
-padding:13px;
-color:#8f867c
+  margin:15px 0;
+  border:1px solid #ddd4c9;
+  border-radius:14px;
+  padding:13px;
+  color:#8f867c
 }
 
-.search span{margin-right:10px}
+.search span{
+  margin-right:10px
+}
 
 .cats{
-display:grid;
-grid-template-columns:1fr;
-gap:7px
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:7px
 }
 
 .cats button{
-border:1px solid #e0d8ce;
-background:#fff;
-border-radius:13px;
-padding:10px;
-font-size:19px
+  border:1px solid #e0d8ce;
+  background:#fff;
+  border-radius:13px;
+  padding:10px 3px;
+  font-size:19px;
+  cursor:pointer
 }
 
 .cats b{
-display:block;
-font-size:10px;
-margin-top:6px
+  display:block;
+  font-size:10px;
+  margin-top:6px
 }
 
 .section-title{
-display:flex;
-justify-content:space-between;
-margin:22px 0 10px
+  display:flex;
+  justify-content:space-between;
+  margin:22px 0 10px
 }
 
 .section-title span{
-color:#b17d4b;
-font-size:12px
+  color:#b17d4b;
+  font-size:12px;
+  cursor:pointer
 }
 
 .products{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:8px
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px
 }
 
 .card{
-background:#fff;
-border-radius:14px;
-padding:7px;
-box-shadow:0 3px 12px #0000000b
+  background:#fff;
+  border-radius:14px;
+  padding:7px;
+  box-shadow:0 3px 12px #0000000b;
+  cursor:pointer
 }
 
 .card .mini-door{
-height:120px;
-border-radius:10px;
-background:#eee;
-position:relative;
-overflow:hidden
+  height:120px;
+  border-radius:10px;
+  background:#eee;
+  position:relative;
+  overflow:hidden
 }
 
 .card .mini-door img{
-width:100%;
-height:100%;
-display:block;
-object-fit:contain;
-object-position:center
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center
 }
 
 .card h4{
-margin:7px 2px 3px;
-font-size:11px
+  margin:7px 2px 3px;
+  font-size:11px
 }
 
 .card p{
-margin:0 2px;
-color:#a47649;
-font-size:10px
+  margin:0 2px;
+  color:#a47649;
+  font-size:10px
 }
 
 nav{
-position:fixed;
-bottom:0;
-left:50%;
-transform:translateX(-50%);
-max-width:430px;
-width:100%;
-display:flex;
-justify-content:space-around;
-background:#fff;
-border-top:1px solid #e4ddd4;
-padding:10px 5px;
-z-index:5
+  position:fixed;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  max-width:430px;
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  background:#fff;
+  border-top:1px solid #e4ddd4;
+  padding:10px 5px;
+  z-index:100
 }
 
 nav button{
-border:0;
-background:none;
-color:#777;
-font-size:18px
+  border:0;
+  background:none;
+  color:#777;
+  font-size:18px;
+  cursor:pointer
 }
 
 nav b{
-display:block;
-font-size:9px;
-margin-top:3px
+  display:block;
+  font-size:9px;
+  margin-top:3px
 }
 
-.selected{color:#a87546!important}
+.selected{
+  color:#a87546!important
+}
 
 
-/* ===== غرفة عرض الباب ===== */
+/* =================================
+   ROOM SHOWCASE
+   ================================= */
 
 .room-showcase{
-position:relative;
-width:100%;
-height:430px;
-border-radius:24px;
-overflow:hidden;
-background:#cfc5b8;
-box-shadow:0 12px 35px rgba(0,0,0,.18);
-margin-bottom:18px
+  position:relative;
+  width:100%;
+  height:430px;
+  border-radius:24px;
+  overflow:hidden;
+  background:#cfc5b8;
+  box-shadow:0 12px 35px rgba(0,0,0,.14);
+  margin-bottom:18px
 }
 
 .room-wall{
-position:absolute;
-inset:0;
-background:
-linear-gradient(90deg,
-rgba(0,0,0,.12),
-transparent 25%,
-transparent 75%,
-rgba(0,0,0,.12)),
-linear-gradient(180deg,
-#ded5ca 0%,
-#cfc4b7 70%,
-#a99b8d 70%,
-#8f8071 100%)
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.10),
+      transparent 25%,
+      transparent 75%,
+      rgba(0,0,0,.12)
+    ),
+    linear-gradient(
+      180deg,
+      #ded5ca 0%,
+      #cfc4b7 72%,
+      #a99b8d 72%,
+      #98897a 100%
+    )
 }
 
 .room-wall:before{
-content:"";
-position:absolute;
-top:-70px;
-left:50%;
-transform:translateX(-50%);
-width:280px;
-height:210px;
-background:radial-gradient(
-ellipse,
-rgba(255,244,218,.9),
-rgba(255,236,199,.35) 40%,
-transparent 72%);
-filter:blur(5px)
+  content:"";
+  position:absolute;
+  top:-80px;
+  left:50%;
+  transform:translateX(-50%);
+  width:260px;
+  height:190px;
+  background:radial-gradient(
+    ellipse,
+    rgba(255,244,218,.85) 0%,
+    rgba(255,236,199,.32) 38%,
+    transparent 72%
+  );
+  filter:blur(4px)
 }
 
 .room-wall:after{
-content:"";
-position:absolute;
-left:0;
-right:0;
-bottom:0;
-height:30%;
-background:
-repeating-linear-gradient(
-90deg,
-rgba(70,55,42,.13) 0,
-rgba(70,55,42,.13) 2px,
-transparent 2px,
-transparent 65px),
-linear-gradient(#a99a8b,#817264);
-opacity:.8
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:28%;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(80,65,52,.12) 0px,
+      rgba(80,65,52,.12) 2px,
+      transparent 2px,
+      transparent 55px
+    ),
+    linear-gradient(
+      180deg,
+      #aa9b8b,
+      #8f8071
+    );
+  opacity:.8
 }
 
 .wall-light{
-position:absolute;
-z-index:2;
-left:50%;
-bottom:25px;
-transform:translateX(-50%);
-width:70%;
-height:100px;
-background:radial-gradient(
-ellipse,
-rgba(255,220,170,.4),
-transparent 70%);
-filter:blur(8px)
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:130px;
+  height:8px;
+  border-radius:50%;
+  background:#fff4dc;
+  box-shadow:
+    0 0 25px 12px rgba(255,244,220,.55);
+  z-index:3
 }
-
-
-/* إطار الباب */
 
 .door-display{
-position:absolute;
-z-index:3;
-left:50%;
-bottom:42px;
-transform:translateX(-50%);
-width:58%;
-height:82%;
-background:#211d19;
-padding:5px;
-border-radius:5px 5px 0 0;
-box-shadow:
-0 18px 35px rgba(0,0,0,.4),
-0 0 0 4px rgba(69,55,44,.45)
+  position:absolute;
+  z-index:4;
+  left:50%;
+  bottom:17%;
+  transform:translateX(-50%);
+  width:58%;
+  height:68%;
+  background:#5c5045;
+  border:10px solid #40372f;
+  border-bottom:0;
+  border-radius:7px 7px 0 0;
+  overflow:hidden;
+  box-shadow:
+    0 12px 25px rgba(0,0,0,.35)
 }
-
-
-/* الصورة الأصلية */
 
 .door-display img{
-width:100%;
-height:100%;
-display:block;
-object-fit:contain;
-object-position:center;
-background:#eee;
-border-radius:2px
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center top
 }
 
+.decor-left{
+  position:absolute;
+  z-index:2;
+  left:7%;
+  bottom:18%;
+  width:48px;
+  height:85px;
+  border-radius:50% 50% 8px 8px;
+  background:#7b806b;
+  box-shadow:
+    18px -18px 0 -7px #6c735f,
+    30px 4px 0 -9px #858b73
+}
 
-/* ديكور جانبي */
-
-.decor-left,
 .decor-right{
-position:absolute;
-z-index:4;
-bottom:40px;
-width:36px;
-height:105px;
-border-radius:5px;
-background:linear-gradient(
-90deg,
-#766452,
-#b5a18b,
-#6f5c4b);
-box-shadow:0 8px 18px rgba(0,0,0,.2)
+  position:absolute;
+  z-index:2;
+  right:7%;
+  bottom:18%;
+  width:42px;
+  height:95px;
+  border-radius:50% 50% 8px 8px;
+  background:#8a7159;
+  box-shadow:
+    -17px -22px 0 -8px #725d4a,
+    -27px 5px 0 -10px #9a8065
 }
-/* Floating WhatsApp Button */
+
+
+/* =================================
+   PRODUCT INFORMATION
+   ================================= */
+
+.product-info{
+  background:#faf8f4
+}
+
+.product-info h1{
+  margin:5px 0;
+  font-size:22px
+}
+
+.product-info p,
+.description{
+  color:#756e67;
+  line-height:1.8
+}
+
+.tag{
+  color:#ad7b4c;
+  font-size:12px
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:5px;
+  margin:14px 0
+}
+
+.features div{
+  background:#fff;
+  border:1px solid #e6ded4;
+  border-radius:12px;
+  text-align:center;
+  padding:10px 2px;
+  color:#b47f4d;
+  font-size:17px
+}
+
+.features b{
+  display:block;
+  color:#5f5953;
+  font-size:9px;
+  margin-top:5px
+}
+
+.full{
+  width:100%;
+  margin-top:9px
+}
+
+.outline{
+  background:transparent;
+  border:1px solid #b47f4d;
+  color:#8b6039;
+  border-radius:16px;
+  padding:14px;
+  font-weight:bold;
+  cursor:pointer
+}
+
+
+/* =================================
+   CONTACT BUTTONS
+   ================================= */
+
+.contact-buttons{
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+  margin:14px 0
+}
+
+.contact{
+  display:block;
+  width:100%;
+  text-align:center;
+  background:#fff;
+  border:1px solid #d8cec3;
+  border-radius:14px;
+  padding:14px;
+  color:#8f6035;
+  text-decoration:none;
+  font-weight:bold
+}
+
+.contact.whatsapp{
+  background:#25D366;
+  border-color:#25D366;
+  color:#fff
+}
+
+
+/* =================================
+   SPECIFICATIONS
+   ================================= */
+
+.specs{
+  background:#fff;
+  border:1px solid #e3dbd2;
+  border-radius:16px;
+  overflow:hidden
+}
+
+.specs div{
+  display:flex;
+  justify-content:space-between;
+  padding:13px;
+  border-bottom:1px solid #eee8e1;
+  font-size:13px
+}
+
+.specs div:last-child{
+  border:0
+}
+
+.specs span{
+  color:#716a64
+}
+
+.specs b{
+  color:#2d2926;
+  text-align:left
+}
+
+
+/* =================================
+   FLOATING WHATSAPP
+   ================================= */
 
 .floating-whatsapp{
   position:fixed;
   right:18px;
   bottom:78px;
-  width:58px;
-  height:58px;
+  width:60px;
+  height:60px;
   border-radius:50%;
   background:#25D366;
   color:#fff;
@@ -403,13 +577,31 @@ box-shadow:0 8px 18px rgba(0,0,0,.2)
   justify-content:center;
   text-decoration:none;
   font-size:29px;
-  box-shadow:0 6px 18px rgba(0,0,0,.25);
-  z-index:9999;
+  box-shadow:0 7px 20px rgba(0,0,0,.28);
   border:3px solid #fff;
+  z-index:9999;
+  transition:transform .15s ease
 }
 
 .floating-whatsapp:active{
-  transform:scale(.94);
+  transform:scale(.92)
 }
-.decor-left{left:7%}
-.decor-right{right:7%}
+
+
+/* =================================
+   MOBILE
+   ================================= */
+
+@media(max-width:430px){
+
+  .screen{
+    width:100%;
+    max-width:430px
+  }
+
+  .floating-whatsapp{
+    right:16px;
+    bottom:76px
+  }
+
+}
