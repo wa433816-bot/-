@@ -387,6 +387,29 @@ background:linear-gradient(
 #6f5c4b);
 box-shadow:0 8px 18px rgba(0,0,0,.2)
 }
+/* Floating WhatsApp Button */
 
+.floating-whatsapp{
+  position:fixed;
+  right:18px;
+  bottom:78px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#25D366;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:29px;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);
+  z-index:9999;
+  border:3px solid #fff;
+}
+
+.floating-whatsapp:active{
+  transform:scale(.94);
+}
 .decor-left{left:7%}
 .decor-right{right:7%}
